@@ -10,6 +10,7 @@ body
 {
     font-family: 'Rufina', serif;
     height: 10000px;
+
 }
 
 
@@ -139,7 +140,10 @@ background-color: white;
        font-size: 30px;
     }
 }
-
+@media(max-width:768px)
+{
+    .navbar {width: 100%;}  
+}
 
 
 /* <!--========================= Start Header  ============================--> */
@@ -239,12 +243,12 @@ header
 }
 @media(max-width:1024px)
 {
-    header{width:103%}
+    header{width:100%}
 }
 
 @media(max-width:768px)
 {
-    header{width: 116%;}
+    header{width: 100%;}
     .header-description .info {
        
         transform: translate(-13px,120px);
@@ -374,9 +378,8 @@ height: 50px;
 
 @media(max-width:768px)
 {
-    .about .about-info .content {
-        margin-left: 213px;
-}}
+  .about{ margin-right: 0px}; 
+}
 
 
 
@@ -477,12 +480,11 @@ margin-bottom: 30px;
 
 /* <!--======================== End Serviece  ============================--> */
 
-@media(max-width:768px)
+.serviece-mg
 {
-
+    width: 100%;
+ 
 }
-
-
 
 .serviece-mg .heading h2
 {
@@ -507,9 +509,15 @@ margin-bottom: 30px;
     color: #fff;
     background-color: #E44239;
 }
+/*======================================End Servieces-img =======================*/
+
 
 @media(max-width:768px)
 {
+
+    .serviece{width: 100%;}
+
+
 
     .serviece-mg .heading h2
     {
@@ -518,5 +526,339 @@ margin-bottom: 30px;
     .serviece-mg a
     {
         padding: 8px;
+    }
+
+    .serviece-mg
+    {
+        padding-left: 0px;
+        width: 100%;
+    }
+}
+
+/*=========================================Start Contact============================*/
+
+
+.contact
+{
+    background-image: url('../Images/section_bg02.jpg');
+    width: 100%;
+    margin-top: 200px;
+    padding: 100px;    
+}
+.contact .heading h2
+{
+color: #ec5b53;
+width: 80%;
+}
+.contact .heading
+{
+    width: 100%;
+}
+
+.contact .active1
+{
+    width: 100%;
+}
+
+
+/*=========================================End Contact==============================*/
+@media(max-width:768px)
+{
+    .contact .active1
+    {
+        width: 100%;
+    }
+.contact
+{
+    padding: 70px;
+    padding-left: 30px;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+   
+}
+.contact .heading h2
+{
+    font-size: 30px;
+    width: 100%;
+}
+
+
+
+}
+
+
+/* ===================================FeedBack========================*/
+
+.Feedback
+{
+    width: 100%;
+    margin-top: 200px;
+}
+.Feedback .heading
+{
+width: 100%;
+padding-left: 0;
+}
+.Feedback .heading h2
+{
+    width: 95%;
+}
+
+
+.Feedback a 
+{
+z-index: 100;
+    background-color: red;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    color: royalblue;
+    text-align: center;
+}
+.Feedback a .carousel-control-next-icon,.Feedback .carousel-control-prev-icon
+{
+    font-size: 30px;
+    color: royalblue;
+    margin-top: 13px;
+
+}
+.Feedback .carousel-control-prev
+{
+margin-left: 265px;
+}
+
+.Feedback .carousel-item
+{
+  
+}
+
+.Feedback .carousel-item .icon-imag
+{
+    border: 1px solid #57667e;
+    padding: 50px;
+    padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.Feedback #carouselExampleControls
+{
+    margin-top: 50px;
+}
+.Feedback .carousel-item .icon-imag .comment-person
+{
+   margin-left: 10px;
+   padding-top: 10px;
+}
+.Feedback .carousel-item .icon-imag .comment-person h2
+{
+color:#ec5b53;
+font-size: 20px;
+
+}
+.Feedback .carousel-item .icon-imag .comment-person span
+{
+    color:#57667e;
+    margin-top: 20px;
+}
+
+.Feedback .carousel-item .icon-imag p
+{
+    margin-top: 20px;
+    width: 100%;
+}
+
+@media(max-width:768px)
+{
+    .Feedback .carousel-control-prev
+    {
+    margin-left: 133px;
+    }   
+}
+
+
+/*==============================Brand===============================*/
+.brand
+{
+    padding: 100px;
+}
+
+.brand .col-md-3
+{
+    text-align: center;
+}
+
+
+.brand .items-brand
+{width: 100%;
+height: 100%;
+}
+
+
+/* ===================work==============*/
+
+.work
+{
+    padding: 100px;
+    background-image: url('../Images/section_bg04.jpg');
+
+}
+
+
+.work .heading h2
+{
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+
+.work .info-work p
+{
+width: 90%;
+margin-bottom: 70px;
+}
+
+.work form
+{
+  
+    text-align: center;
+  
+    
+}
+.work .inf0-contact form input, .work .inf0-contact form textarea,.work .inf0-contact form button
+{
+    display: inline-block ;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: none;
+}
+.work .inf0-contact form textarea
+{
+    height: 200px;
+    padding-top: 20px;
+}
+.work .inf0-contact form a
+{
+    width: 100%;
+}
+
+
+@media(max-width:768px)
+{
+    .work .heading h2
+    {
+        width: 100%;
+        font-size: 30px;
+    } 
+    .work .justify-content-between
+    {
+        justify-content: space-between!important;
+    }
+
+    
+
+
+.col-md-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 100.333333%;
+    max-width: 100.333333%;
+}
+.col-md-5
+{
+    margin-top: 30px;
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 100.333333%;
+    max-width: 100.333333%; 
+}
+}
+
+/*===================footer===================*/
+footer
+{
+    background-color:#080827;
+   padding: 100px 0;
+
+}
+
+
+footer .box
+{
+    color: white;
+    text-align: center;
+padding-top: 100px;
+    padding: 20px;
+}
+
+footer .box a
+{
+    color: white;
+    font-size: 50px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+footer .box a:hover
+{
+    text-decoration: none;
+}
+
+footer .box1
+{
+    color:#393a50;
+}
+footer .box1 i
+{
+    color: red;
+}
+
+footer .box3
+{
+    color: white;
+    text-align: right;
+}
+footer .box3 i
+{
+    margin-left: 10px;
+}
+
+.show
+{
+    display: none;
+}
+
+.arrow
+{
+    width: 50px;
+    height: 50px;
+    background-color: #e44239;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.6s all ease-in;
+    z-index: 5000000;
+
+}
+
+.arrow i
+{
+    font-size: 20px;
+    color: white;
+    line-height: 50px;
+}
+
+@media(max-width:768px)
+{
+    footer .box a 
+    {
+        font-size: 30px;
     }
 }
